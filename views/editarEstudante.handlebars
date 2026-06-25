@@ -1,0 +1,8 @@
+<h1>Formulário de Edição de Estudante</h1>
+
+<form action="/estudantes/{{id}}?_method=PUT" method="POST">
+    Nome: <input type="text" name="nome" value="{{nome}}" required><br>
+    Idade: <input type="number" name="idade" value="{{idade}}" required><br>
+    <button type="submit">Atualizar</button>
+</form>
+<a href="/">Voltar</a>

@@ -1,0 +1,13 @@
+<h1>Estudantes</h1>
+<a href="/estudantes/create">Cadastrar</a>
+<ul>
+    {{#each estudantes}}
+    <li>{{nome}} - {{idade}}</li>
+    <form action="/estudantes/{{id}}?_method=DELETE" method="POST">
+        <button type="submit">Deletar</button>
+    </form>
+    <form action="/estudantes/{{id}}/edit?_method=PUT" method="POST">
+        <button type="submit">Editar</button>
+    </form>
+    {{/each}}
+</ul> 
